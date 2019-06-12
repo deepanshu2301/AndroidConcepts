@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#344FBD">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:hint="Enter Address"
+            android:layout_marginTop="15dp"
+            android:layout_weight="4"
+            android:textSize="20sp"
+            android:textColorHint="#C5C6C7"
+            android:gravity="center"
+            android:id="@+id/etview"
+            android:layout_margin="5sp"
+            android:background="@color/seablue"
+            />
+
+        <Button
+            android:id="@+id/btview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@color/skyblue"
+            android:gravity="center"
+            android:padding="5sp"
+            android:text="GO"
+            android:textColorHint="#C5C6C7"
+            android:textSize="23sp" />
+    </LinearLayout>
+<WebView
+    android:layout_width="match_parent"
+    android:layout_height="550sp"
+    android:background="#1F2833"
+    android:layout_margin="10sp"
+    android:id="@+id/wvview"
+    android:layout_gravity="center_vertical"
+    >
+
+</WebView>
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YOUTUBE"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/i3"
+
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:src="@drawable/i2"
+        android:paddingTop="10dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon1"
+            android:layout_width="65dp"
+            android:layout_height="69dp"
+            android:paddingLeft="19dp"
+            android:layout_alignLeft="@id/icon1"
+            android:src="@drawable/t1"
+            />
+
+        <TextView
+            android:id="@+id/l1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/icon1"
+
+            android:text="Ghoul: Now streaming"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/l2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/l1"
+            android:layout_toRightOf="@id/icon1"
+            android:layout_marginLeft="8dp"
+            android:text="Only on Netflix"
+            android:textColor="#A9A9A9" />
+
+        <TextView
+            android:id="@+id/l3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/l2"
+            android:layout_toRightOf="@id/icon1"
+            android:layout_marginLeft="8dp"
+            android:text="Netflix India"
+
+            android:textColor="#A9A9A9" />
+
+        <TextView
+            android:id="@+id/l4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/l3"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/icon1"
+            android:text="WATCH NOW"
+            android:textColor="#0000FF" />
+
+        <TextView
+            android:id="@+id/l5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/l3"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/l4"
+            android:background="@color/colorAccent"
+            android:text="AD"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/i1"
+android:layout_marginTop="10dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/icon2"
+            android:src="@drawable/t2"
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="13dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/icon2"
+
+            android:id="@+id/m1"
+            android:textColor="#000000"
+            android:text="Alastair Cook v James Anderson"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/icon2"
+            android:layout_below="@id/m1"
+            android:id="@+id/m2"
+
+            android:textColor="#A9A9A9"
+            android:text="England and wales Cricket Board."/>
+        <TextView
+            android:id="@+id/m3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/icon2"
+            android:layout_below="@id/m2"
+
+            android:textColor="#A9A9A9"
+
+            android:text="3 years ago"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/m4"
+            android:layout_below="@id/m3"
+
+            android:textColor="#0000FF"
+            android:paddingLeft="20dp"
+            android:text="WATCH NOW"/>
+        <TextView
+            android:id="@+id/m4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/icon2"
+            android:layout_below="@id/m3"
+
+            android:textColor="#A9A9A9"
+
+            android:text="3.2B views"/>
+    </RelativeLayout>
+</LinearLayout>

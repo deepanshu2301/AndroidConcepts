@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SunShine">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#A4C639"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/myimage"
+        tools:layout_editor_absoluteX="128dp" />
+
+
+    <TextView
+        android:id="@+id/today_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF0000"
+        android:padding="10sp"
+        android:text="DEEPANSHU JINDAL"
+        android:textAlignment="center"
+        android:textAppearance="@color/colorAccent"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFE0"
+        android:padding="10sp"
+        android:text="Hey everyone ! This is my first android application. i am a begineer in this course, i hope you like it. "
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/college"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF00"
+        android:padding="10sp"
+        android:text="COLLEGE:MAHARAJA AGRASEN INSTITUTE OF TECHNOLOGY"
+        android:textAlignment="center"
+        android:textAppearance="@color/colorAccent"
+        android:textSize="20sp"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C0C0C0"
+        android:padding="5sp"
+        android:text="expand"
+        android:textAlignment="center"
+        android:textColor="#000000" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="yes"
+            android:textAlignment="center"
+            android:textAppearance="@color/colorAccent"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="no"
+            android:textAlignment="center"
+            android:textAppearance="@color/colorAccent"
+            android:textSize="15sp" />
+    </RadioGroup>
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:queryHint="search photos" />
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF00"
+        android:padding="10sp"
+        android:text="Please enter the app rating"
+        android:textAlignment="center"
+        android:textColor="#000000" />
+
+    <RatingBar
+        style="?android:ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="3.5"
+        android:stepSize="0.5" />
+</LinearLayout>

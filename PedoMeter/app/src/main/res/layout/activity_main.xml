@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+
+    android:background="#FFE0BD"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginTop="30dp"
+        android:textSize="105dp"
+        android:id="@+id/pstep"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="4dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/start"
+        android:textSize="35dp"
+        android:layout_marginTop="20dp"
+        android:text="START"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/stop"
+        android:textSize="35dp"
+        android:layout_marginTop="20dp"
+        android:text="STOP"
+        android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Distance:"
+            android:textSize="30dp"
+            android:textColor="#000000"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:id="@+id/distance"
+        android:textSize="30dp"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Calories:"
+            android:textSize="30dp"
+
+            android:textColor="#000000"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/calories"
+            android:textSize="30dp"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Time :"
+            android:textSize="30dp"
+
+            android:textColor="#000000"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/time"
+            android:textSize="30dp"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:text="Target (Steps):"
+            android:textSize="24dp"
+
+            android:textColor="#000000"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:id="@+id/targett"
+            android:hint="10,000"
+            android:textColor="#c5c5c5"
+            android:textSize="28dp"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="Go"
+            android:id="@+id/go"
+
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Steps Left:"
+            android:textSize="30dp"
+
+            android:textColor="#000000"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/stepleft"
+            android:textSize="30dp"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Progress %:"
+            android:textSize="30dp"
+
+            android:textColor="#000000"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/percent"
+            android:textSize="30dp"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:gravity="right"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/resetbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_gravity="right"
+        android:layout_margin="4dp"
+        android:text="RESET"
+        android:textAllCaps="true"
+        android:textSize="20dp" />
+</LinearLayout>
+</LinearLayout>
+</ScrollView>

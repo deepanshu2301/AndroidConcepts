@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="email address"
+        android:inputType="textEmailAddress"
+        android:id="@+id/email"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Count"
+
+        android:textSize="25dp"
+        android:background="@color/colorAccent"
+        android:textColor="@color/Black"
+        android:layout_centerInParent="true"
+        android:id="@+id/count"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/count"
+        android:layout_toLeftOf="@id/count"
+        android:text="-"
+        android:id="@+id/minus"
+        android:onClick="decrement"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/plus"
+        android:onClick="increment"
+        android:layout_below="@id/count"
+        android:layout_toRightOf="@id/count"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/minus"
+        android:text="RESET"
+        android:onClick="reset"/>
+</RelativeLayout>
